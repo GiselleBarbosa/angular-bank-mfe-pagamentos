@@ -7,4 +7,8 @@ module.exports = withModuleFederationPlugin({
   exposes: {
     "./PagamentosModule": "./src/app/pagamentos/pagamentos.module.ts",
   },
+
+  remotes: {
+    mfeExtrato: "mfeExtrato@http://localhost:4201/remoteEntry.js",
+  },
 });

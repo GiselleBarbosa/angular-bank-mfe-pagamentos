@@ -1,2 +1,5 @@
 <h2>Pagamentos</h2>
-<button (click)="realizarPagamento()">Pagar Conta</button>
+<p>Saldo atual: R$ {{ saldo }}</p>
+<button (click)="realizarPagamento(200)">Pagar R$ 200</button>
+<button (click)="realizarPagamento(400)">Pagar R$ 400</button>
+<button (click)="realizarPagamento(600)">Pagar R$ 600</button>
